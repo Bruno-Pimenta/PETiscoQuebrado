@@ -192,7 +192,7 @@ programa {
     exibeFatura(produtos, valores)
     escreva("\nValor total da compra: ", M.arredondar(valorTotal,2))
     escreva("\n- PETisco -")
-    escreva("\nCNPJ: ")
+    escreva("\nCNPJ: 92.249.031/0001-07")
     escreva("\nData: ", diaAtual,"/", mesAtual,"/", anoAtual)
     escreva("\nHorário: ", horarioH, ":", horarioM)
     escreva("\nOBRIGADO E VOLTE SEMPRE!!!\n\n")
@@ -217,8 +217,10 @@ programa {
           se(troco<0){
             escreva("Desculpe, valor menor que a compra!\n\n")
           }senao{
-            escreva("\nTotal da compra R$ ", M.arredondar(conta,2), "\nValor do pagamento R$ ", M.arredondar(valorcliente,2),
-            "\nTroco: R$ ", M.arredondar(troco,2),"\n")
+            escreva("\nTotal da compra R$ ", M.arredondar(conta,2), "\nValor do pagamento R$ ", M.arredondar(valorcliente,2))
+            se(troco>0){
+            	escreva("\nTroco: R$ ", M.arredondar(troco,2),"\n")
+            }
             faturaNota = verdadeiro
           }
         }enquanto(troco<0)
@@ -302,7 +304,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 5020; 
+ * @POSICAO-CURSOR = 6324; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
